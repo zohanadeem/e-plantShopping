@@ -9,15 +9,21 @@ function LandingPage() {
   };
 
   return (
-    <div className="landing-page">
-      <div className="landing-content">
-        <h1>🌿 Paradise Nursery</h1>
-        <p>Discover the Perfect Plants for Your Home</p>
-        <button className="get-started-btn" onClick={handleGetStarted}>
-          Get Started
-        </button>
-      </div>
+  <div className="background-image">
+  <div className="landing-page">
+    <div className="landing-content">
+      <h1>Paradise Nursery</h1>
+
+      <p>
+        Welcome to Paradise Nursery, your home for beautiful indoor plants.
+      </p>
+
+      <Link to="/products" className="get-started-btn">
+        Get Started
+      </Link>
     </div>
+  </div>
+</div>
   );
 }
 

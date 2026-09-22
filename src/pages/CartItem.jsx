@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { removeFromCart, updateQuantity } from '../redux/CartSlice';
+import { removeItem, updateQuantity } from '../redux/CartSlice';
 
 function CartItem() {
   const dispatch = useDispatch();
@@ -51,7 +51,7 @@ function CartItem() {
 
   // Remove item
   const handleRemoveItem = (id) => {
-    dispatch(removeFromCart(id));
+    dispatch(removeItem(id));
   };
 
   return (

@@ -1,70 +1,111 @@
-# Getting Started with Create React App
+# Paradise Nursery Shopping Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Overview
+Paradise Nursery is a dynamic e-commerce web application built with React that allows users to browse and purchase plants from an online plant shop.
 
-## Available Scripts
+## Project Name
+**Paradise Nursery** - Your destination for beautiful, healthy plants and expert gardening advice.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+### 1. Landing Page
+- Beautiful hero section with Paradise Nursery branding
+- "Get Started" button to navigate to the product listing
+- Gradient background with a nature theme
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 2. Product Listing
+- Display of 18 unique houseplants organized into 3 categories:
+  - **Succulents**: Aloe Vera, Jade Plant, Echeveria, String of Pearls, Cactus Mix, Sedum
+  - **Tropical Plants**: Monstera Deliciosa, Fiddle Leaf Fig, Bird of Paradise, Hibiscus, Anthurium, Bougainvillea
+  - **Flowering Plants**: Orchid, Rose, Tulip, Peony, Sunflower, Begonia
+- Each plant displays:
+  - Thumbnail image
+  - Plant name
+  - Price
+  - "Add to Cart" button that disables after adding
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 3. Shopping Cart
+- Display all items added to cart
+- Show total cart amount and total cost for each plant
+- Display for each item:
+  - Thumbnail image
+  - Plant name
+  - Unit price
+  - Total price for quantity
+- Quantity control buttons (increase/decrease)
+- Delete button for each item
+- "Continue Shopping" button to return to product listing
+- "Checkout" button (Coming Soon)
 
-### `npm test`
+### 4. Navigation Bar
+- Available on all pages
+- Links to: Home, Plants, About Us, and Cart
+- Cart icon with dynamic item count badge
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 5. About Us Page
+- Company story and mission statement
+- Reasons to choose Paradise Nursery
+- Customer commitment and sustainability practices
 
-### `npm run build`
+## Technology Stack
+- **React** 18.x - UI library
+- **React Router DOM** - Client-side routing
+- **Redux Toolkit** - State management
+- **CSS3** - Responsive styling
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Project Structure
+```
+src/
+├── redux/
+│   ├── CartSlice.jsx
+│   └── store.js
+├── components/
+│   └── Navbar.jsx
+├── pages/
+│   ├── LandingPage.jsx
+│   ├── ProductList.jsx
+│   ├── CartPage.jsx
+│   └── AboutUs.jsx
+├── App.jsx
+├── App.css
+└── index.js
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installation & Setup
+```bash
+npm install
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Open [http://localhost:3000](http://localhost:3000) to view the application.
 
-### `npm run eject`
+## File Descriptions
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### CartSlice.jsx
+Redux slice implementing cart management with reducers for:
+- Adding items to cart
+- Removing items
+- Updating quantities
+- Calculating totals
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### App.jsx
+Main application component with React Router setup for navigation between pages
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### App.css
+Comprehensive styling including:
+- Landing page with green gradient background
+- Product grid layout
+- Shopping cart page
+- Responsive design for mobile devices
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### ProductList.jsx
+Product listing page displaying 18 plants in 3 categories with add-to-cart functionality
 
-## Learn More
+### CartPage.jsx
+Shopping cart interface with item management and checkout placeholder
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### AboutUs.jsx
+Company information and mission statement page
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+Educational project for demonstrating React and Redux e-commerce skills.

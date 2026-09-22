@@ -64,7 +64,7 @@ src/
 ├── pages/
 │   ├── LandingPage.jsx
 │   ├── ProductList.jsx
-│   ├── CartPage.jsx
+│   ├── CartSlice.jsx
 │   └── AboutUs.jsx
 ├── App.jsx
 ├── App.css
@@ -101,7 +101,7 @@ Comprehensive styling including:
 ### ProductList.jsx
 Product listing page displaying 18 plants in 3 categories with add-to-cart functionality
 
-### CartPage.jsx
+### CartSlice.jsx
 Shopping cart interface with item management and checkout placeholder
 
 ### AboutUs.jsx

@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { removeFromCart, updateQuantity } from '../redux/CartSlice';
 
-function CartPage() {
+function CartSlice() {
   const dispatch = useDispatch();
   const cartItems = useSelector(state => state.cart.items);
   const totalPrice = useSelector(state => state.cart.totalPrice);
@@ -115,4 +115,4 @@ function CartPage() {
   );
 }
 
-export default CartPage;
+export default CartSlice;
